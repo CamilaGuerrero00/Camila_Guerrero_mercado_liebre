@@ -1,142 +1,127 @@
 :root {
-    --amarillo : #EAC926;
-    --azul : #03264C;
-    --celeste : #1259c3;
-    --grisOscuro:#666;
-    --grisClaro:#ebebeb;
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
     --verde: #39b54a;
-    --tipografia : 'Roboto';
     --tipografia: 'Roboto';
-}
-/*header*/
-*{
-    margin: 0;
-    padding: 0;
-}
-body{   
-    font-family: var(--tipografia);
-    font-size: 12px;
-}
-ul{ padding:0;}
-li { 
-    list-style: none;
-}
-.home_header{
-    background-color: var(--amarillo);
-    font-size: 12px;
-}
-.home_header-img-logo{
-    padding: 15px;
-    width: 50%;
-}
-.home_header-nav-buscador{ padding: 15px;}
-.home_header-nav-buscador i{
-    background-color: white;
-    border: 1px var(--grisOscuro) solid;
-    padding: 4px 3px;
-    text-align: center;
-}
-.home_header-nav-menu p{text-align: center;}
-.home_header-nav-menu ul{display: none;}
-.home_header-nav-banner{ width: 100%;}
-.home_header-burger-menu{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; 
-    margin: 15px auto ; 
-    background-color: var(--celeste);
-    width: 10vw;
-    height: 5vh;
-    border-radius: 17%;
-    color: var(--grisClaro);
-    font-size: 20px;
+    --tipografia: 'Roboto';
 }
 
 /*main*/
 
-.home_main{
+.home_main {
     padding-left: 5%;
     padding-right: 5%;
     width: 90%;
     background-color: var(--grisClaro);
     padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
-.home_main h1{  
+
+.home_main h1 {
     font-size: 24px;
     padding: 15px;
 }
-.home_main-article{
+
+.home_main-article {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
     background-color: white;
 }
-.home_main-article-descripcion{ 
+
+.home_main-article-descripcion {
     border-top: solid 1px var(--grisClaro);
-    padding:15px;
+    padding: 15px;
     box-sizing: border-box;
-    
+
 }
-.home_main-article-descripcion p{
+
+.home_main-article-descripcion p {
     color: var(--verde);
 }
-.home_main-article-descripcion-icon{
+
+.home_main-article-descripcion-icon {
     color: var(--verde);
 }
-.home_main-article-descripcion h3{
+
+.home_main-article-descripcion h3 {
     display: none;
 }
-.home_main-article img{  width: 100%;}    
+
+.home_main-article img {
+    width: 100%;
+}
 
 /*footer*/
-.home_footer{
+.home_footer {
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
 }
-.home_footer i{
+
+.home_footer i {
     color: var(--celeste);
     margin-top: 60px;
     margin-bottom: 10px;
     font-size: 50px;
 }
-.home_footer-copyright{
+
+.home_footer-copyright {
     padding-top: 50px;
     text-align: left;
     padding-bottom: 20px;
 }
-@media(min-width: 361px){
+
+/*tablet*/
+@media(min-width: 481px) {
+
     /*header*/
-    .home_main-article{
+    .home_header-encabezado-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home_main-article {
+
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .home_header-nav-menu ul{
+    .home_main-articles{
+        display: flex;
+    flex-direction: row;
+    gap: 50px;
+    }
+    
+
+    /*main*/
+    .home_main-article-descripcion h3 {
+        display: inline;
+    }
+}
+
+@media(min-width: 769px) {
+    body {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    /*header*/
+    .home_header-nav-menu ul {
         display: block;
         padding: 0px 0px 10px 10px;
     }
-    .home_header-burger-menu{ 
+
+    .home_header-burger-menu {
         display: none;
     }
- /*main*/
- .home_main-article-descripcion h3{
-    display: inline;
-}
-}
-@media(min-width: 769px){
-    body{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    /*main*/
+    .home_main section{
+        display: flex;
+    flex-direction: row;
+    gap: 1em;
     }
-     /*header*/
-     .home_header-nav-menu ul{
-        display: block;
-        padding: 0px 0px 10px 10px;
-    }
-    .home_header-burger-menu{ 
-        display: none;
-    }
- /*main*/
- 
- .home_main-article-descripcion h3{
-    display: inline;   
 }
    
-}
