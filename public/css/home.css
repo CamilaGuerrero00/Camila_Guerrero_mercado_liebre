@@ -27,6 +27,7 @@
 }
 
 .home_main-article {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -42,16 +43,30 @@
 
 .home_main-article-descripcion p {
     color: var(--verde);
+    
 }
 
 .home_main-article-descripcion-icon {
     color: var(--verde);
+    position: absolute;
+    bottom: 56px;
+    right: 20px;
+    background-color: white;
 }
-
-.home_main-article-descripcion h3 {
-    display: none;
+.home_main-article-descripcion-icon i{
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 14px;
+    border: var(--verde) 1px solid;
 }
-
+.home_main-article-descripcion-text{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+.home_main-article-descripcion h3{
+    padding-top: 1em;
+}
 .home_main-article img {
     width: 100%;
 }
@@ -79,23 +94,21 @@
 /*tablet*/
 @media(min-width: 481px) {
 
-    /*header*/
-    .home_header-encabezado-mobile {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .home_main-article {
 
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .home_main-articles{
+
+    .home_main-articles {
         display: flex;
-    flex-direction: row;
-    gap: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
     }
-    
+    .home_main-article-descripcion-icon {
+        bottom: 56px;      
+    }
+
 
     /*main*/
     .home_main-article-descripcion h3 {
@@ -108,20 +121,19 @@
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    /*header*/
-    .home_header-nav-menu ul {
-        display: block;
-        padding: 0px 0px 10px 10px;
-    }
-
-    .home_header-burger-menu {
-        display: none;
-    }
     /*main*/
-    .home_main section{
+    .home_main-article-descripcion-icon {
+        bottom: 70px;      
+    }
+    .home_main-articles {
         display: flex;
-    flex-direction: row;
-    gap: 1em;
+        justify-content: space-between;
+        gap: 1em;
+    }
+    .home_main section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1em;
     }
 }
-   
