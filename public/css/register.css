@@ -1,0 +1,16 @@
+.register_main{
+    background-color: var(--grisClaro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.register_main-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.register_main-form label{
+   text-align: right;
+}

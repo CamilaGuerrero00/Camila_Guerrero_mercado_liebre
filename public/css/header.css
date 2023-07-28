@@ -41,7 +41,13 @@
     text-align: center; 
     padding-bottom: 15px;
 }
-.home_header-nav-menu {display: none;}
+.home_header-nav-menu {
+    height: 0;
+    overflow: hidden;
+}
+.showMenu{
+    height: auto;
+}
 .home_header-nav-banner{ width: 100%;}
 .home_header-burger-menu{ 
     display: block;
@@ -49,6 +55,7 @@
     text-align: center;
     margin: auto;
     margin-bottom: 10px;
+    width: 100%;
 }
 .home_header-burger-menu i{
     background-color: var(--celeste);
@@ -69,6 +76,7 @@
    justify-content: space-between;
 }
 .home_header-nav-menu {
+    height: auto;
     margin: 0 30px;
     display: flex;
     flex-direction: row;
