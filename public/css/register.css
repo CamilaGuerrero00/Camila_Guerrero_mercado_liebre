@@ -1,3 +1,6 @@
+.register{
+    font-family: var(--tipografia);
+}
 .register_main{
     background-color: var(--grisClaro);
     display: flex;
@@ -5,12 +8,99 @@
     justify-content: center;
 }
 .register_main-form{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    gap: 1em;
+}
+.register_main-form input{
+    border: 2px solid var(--celeste);
+    border-radius: 10px;
+    height: 28px;
+    background-color: var(--grisClaro);
+    width: 100%;
+}
+.register_main-form input:hover{
+    border: 2px solid var(--amarillo);
+    justify-content: center;
+}
+.form_perfil_usuario{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.form_categorias{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.form_categorias input, label{
+    width: 40%;
+}
+.register_main-form-buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    margin: auto;
+    gap: 1em;
+    width: 100%;
 }
-.register_main-form label{
-   text-align: right;
+.register_main-form-enviar button{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 6px;
+    border: solid 2px var(--verde);
+    border-radius:10px;
+    transition: all 2s ease;
+}
+.register_main-form-enviar button:hover{
+    background-color: var(--verde);
+}
+.register_main-form-borrar button{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 6px;
+    border: solid 2px var(--azul);
+    border-radius:10px;
+    transition: all 1.5s ease;
+}
+.register_main-form-borrar button:hover{
+    background-color: var(--celeste);
+}
+@media(min-width: 610px) {
+    .register_main-form{
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+        
+    }
+    .register_main-form input{
+        width: 55%;
+    }
+    .register_main-form h2{
+        width: 100%;
+    }
+    .form_categorias{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .form_categorias label{
+        width: 20%;
+    }
+    .form_categorias input{
+        width: 40%;
+    }
+    .register_main-form-enviar button{
+        padding: 6px 30px;
+    }
+    .register_main-form-borrar button{      
+        padding: 6px 30px;
+    }
 }

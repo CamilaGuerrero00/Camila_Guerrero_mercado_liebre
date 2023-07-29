@@ -1,0 +1,35 @@
+.loguin_main{
+    background-color: var(--grisClaro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loguin_main-form{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    gap: 1em;
+}
+.loguin_main-form input{
+    border: 2px solid var(--celeste);
+    border-radius: 10px;
+    height: 30px;
+    background-color: var(--grisClaro);
+}
+.loguin_main-form input:hover{
+    border: 2px solid var(--amarillo);
+}
+.loguin_main-form-enviar button{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 6px;
+    border: solid 2px var(--verde);
+    border-radius:10px;
+    transition: all 2s ease;
+}
+.loguin_main-form-enviar button:hover{
+    background-color: var(--verde);
+}

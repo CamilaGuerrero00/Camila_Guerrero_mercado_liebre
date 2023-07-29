@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/78005296c2.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="register">
     <header class="home_header">
         <div class="home_header-encabezado">
@@ -24,9 +26,12 @@
             <div class="home_header-frase">
                 <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
-
         </div>
 
+        <div class="home_header-burger-menu">
+            <a onclick="document.querySelector('.home_header-nav-menu').classList.toggle('showMenu')"><i
+                    class="fa-solid fa-bars"></i></a>
+        </div>
         <nav class="home_header-nav-menu">
             <ul>
                 <li><a>Ofertas</a></li>
@@ -39,41 +44,57 @@
                 <li><a href="/loguin">Ingresá </a><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
                 <li><a>Mis compras </a><i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
-            
         </nav>
-        <div class="home_header-burger-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
         <img class="home_header-nav-banner" src="/img/img-home-banner.jpg" alt="imagen banner">
     </header>
     <main class="register_main">
         <form action="" method="post" class="register_main-form">
-            <label for="">Nombre y apellido</label>
-            <input type="text">
-            <label for="">Nombre de usuari@</label>
-            <input type="text">
-            <label for="">Fecha de nacimiento</label>
-            <input type="text">
-            <label for="">Domicilio</label>
-            <input type="text">
-            <label for="">Perfil del usuario</label>
-            <input type="radio" name="cov" value="comprar">
-            <input type="radio" name="cov" value="vender">
-            <label for="">Categorías de interés</label>
-            <input type="checkbox" name="categorias" value="Electro">
-            <input type="checkbox" name="categorias" value="Moda">
-            <input type="checkbox" name="categorias" value="Hogar">
-            <input type="checkbox" name="categorias" value="Juguetería">
-            <input type="checkbox" name="categorias" value="Vida sana">
-            <label for="">Foto de usuario</label>
-            <input type="file" name="foto" accept=".jpg" multiple>
+            <label for="nombre_apellido">Nombre y apellido</label>
+            <input type="text" id="nombre_apellido">
+
+            <label for="nombre_usuario">Nombre de usuari@</label>
+            <input type="text" id="nombre_usuario">
+
+            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+            <input type="text" id="fecha_nacimiento">
+
+            <label for="domicilio">Domicilio</label>
+            <input type="text" id="domicilio">
+            <h2>Perfil de usuario</h2>
+            <div class="form_perfil_usuario"> 
+                <input id="comprar" type="radio" name="cov" value="comprar">
+                <label for="comprar">Comprar</label>
+                <input id="vender" type="radio" name="cov" value="vender">
+                <label for="vender">Vender</label>
+            </div>
+            <h2>Categorias</h2>
+            <div class="form_categorias">
+                <input id="electro" type="checkbox" name="categorias" value="electro">
+                <label for="electro">Electro</label>
+                <input id="moda" type="checkbox" name="categorias" value="moda">
+                <label for="moda">Moda</label>
+                <input id="hogar" type="checkbox" name="categorias" value="hogar">
+                <label for="hogar">Hogar</label>
+                <input id="jugueteria" type="checkbox" name="categorias" value="jugueteria">
+                <label for="jugueteria">Juguetería</label>
+                <input id="vidaSana" type="checkbox" name="categorias" value="vidaSana">
+                <label for="vidaSana">Vida sana</label>
+            </div>
+            <label for="fotoUsuario">Foto de usuario</label>
+            <input id="fotoUsuario" type="file" name="foto" accept=".jpg" multiple>
             <label for="">Contraseña</label>
             <input type="password" name="password">
             <label for="">Confirmar contraseña</label>
             <input type="password" name="password2">
-
-            <a href="/"><button type="submit" >Enviar</button></a>
-            <button type="reset">Borrar</button>
+            <div class="register_main-form-buttons">
+                <div class="register_main-form-enviar">
+                <a href="/"><button type="submit">Enviar</button></a>
+            </div>
+            <div class="register_main-form-borrar">
+                <button type="reset">Borrar</button>
+            </div>
+            </div>
+            
         </form>
     </main>
     <footer class="home_footer">
@@ -98,4 +119,5 @@
         <p class="home_footer-copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
 </body>
+
 </html>
