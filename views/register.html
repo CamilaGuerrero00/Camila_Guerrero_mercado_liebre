@@ -12,22 +12,17 @@
 <body class="register">
     <header class="home_header">
         <div class="home_header-encabezado">
-            <div class="home_header-encabezado1">
-                <div class="home_header-logo">
-                    <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="imagen logo"></a>
-                </div>
-                <div class="home_header-buscador">
-                    <form class="home_header-form">
-                        <input type="text" placeholder="buscar producto"></input>
-                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
+            <div class="home_header-logo">
+                <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="imagen logo"></a>
             </div>
+            <form class="home_header-form">
+                <input type="text" placeholder="buscar producto"></input>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
             <div class="home_header-frase">
                 <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
         </div>
-
         <div class="home_header-burger-menu">
             <a onclick="document.querySelector('.home_header-nav-menu').classList.toggle('showMenu')"><i
                     class="fa-solid fa-bars"></i></a>
@@ -45,6 +40,7 @@
                 <li><a>Mis compras </a><i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
+
         <img class="home_header-nav-banner" src="/img/img-home-banner.jpg" alt="imagen banner">
     </header>
     <main class="register_main">
@@ -61,7 +57,7 @@
             <label for="domicilio">Domicilio</label>
             <input type="text" id="domicilio">
             <h2>Perfil de usuario</h2>
-            <div class="form_perfil_usuario"> 
+            <div class="form_perfil_usuario">
                 <input id="comprar" type="radio" name="cov" value="comprar">
                 <label for="comprar">Comprar</label>
                 <input id="vender" type="radio" name="cov" value="vender">
@@ -88,13 +84,13 @@
             <input type="password" name="password2">
             <div class="register_main-form-buttons">
                 <div class="register_main-form-enviar">
-                <a href="/"><button type="submit">Enviar</button></a>
+                    <a href="/"><button type="submit">Enviar</button></a>
+                </div>
+                <div class="register_main-form-borrar">
+                    <button type="reset">Borrar</button>
+                </div>
             </div>
-            <div class="register_main-form-borrar">
-                <button type="reset">Borrar</button>
-            </div>
-            </div>
-            
+
         </form>
     </main>
     <footer class="home_footer">
