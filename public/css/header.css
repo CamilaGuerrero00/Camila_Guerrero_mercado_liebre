@@ -69,7 +69,9 @@
     font-size: 16px;
 }
 @media(min-width: 768px){
-
+body {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 .home_header-encabezado{
     align-items: center;
 }
@@ -78,6 +80,9 @@
 }
 .home_header-buscador{
     width:30% 
+}
+.home_header-form input{   
+    width: 300px;
 }
 .home_header-frase{
     width:30%;
@@ -93,25 +98,10 @@
     justify-content: space-between
 }
 .home_header-nav-menu ul {
+    padding: 0px 0px 10px 10px;
     display: flex;
     flex-direction: row;
     gap: 1em;
 }
 }
 
-@media(min-width: 769px) {
-    body {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .home_header-nav-menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between
-    }
-    .home_header-nav-menu ul {
-        padding: 0px 0px 10px 10px;
-        display: flex;
-        flex-direction: row;
-        gap: 1em;
-    }    
-    }

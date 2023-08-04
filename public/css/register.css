@@ -8,11 +8,17 @@
     justify-content: center;
 }
 .register_main-form{
+    box-shadow: 0px 0px 20px rgb(100, 100, 100);
+    margin: 20px 0;
     font-size: 14px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 10%;
     gap: 1em;
+}
+.register_main-form label{
+    width: 46%;
 }
 .register_main-form input{
     border: 2px solid var(--celeste);
@@ -36,9 +42,7 @@
     flex-wrap: wrap;
     gap: 10px;
 }
-.form_categorias input, label{
-    width: 40%;
-}
+
 .register_main-form-buttons{
     display: flex;
     flex-direction: column;
@@ -72,7 +76,7 @@
 }
 @media(min-width: 610px) {
     .register_main-form{
-
+        margin: 30px ;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -81,21 +85,25 @@
         
     }
     .register_main-form input{
-        width: 55%;
+        width: 50%;
+    }
+    .register_main-form label{       
+        text-align: center;
     }
     .register_main-form h2{
         width: 100%;
     }
     .form_categorias{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
         width: 100%;
     }
     .form_categorias label{
         width: 20%;
     }
     .form_categorias input{
-        width: 40%;
+        width: 20%;
     }
     .register_main-form-enviar button{
         padding: 6px 30px;
@@ -104,3 +112,49 @@
         padding: 6px 30px;
     }
 }
+@media(min-width: 769px) {
+    .register_main{
+      align-items: center;  
+    }
+    .register_main-form{
+        width: 80%;
+    }
+    .register_main-form{
+        justify-content: space-around;
+    }
+    .register_main-form label{
+        width: 25%;
+        text-align: center;
+    }
+    .register_main-form input{
+        width: 52%;
+    }
+    .register_main-form h2{
+        text-align: center;
+    }
+    .form_perfil_usuario{
+        justify-content: center;
+        align-items: center;
+    }
+    .form_perfil_usuario label{
+        width: 15%;
+    }
+    .form_perfil_usuario input{
+        width: 15%;
+    }
+    .form_categorias{
+        justify-content: flex-start;
+    }
+    .form_categorias label{
+        width: 11%;
+    }
+    .form_categorias input{
+        width: 10%;
+    }
+    .register_main-form-enviar button{
+        padding: 6px 50px;
+    }
+    .register_main-form-borrar button{      
+        padding: 6px 50px;
+    }
+    }
